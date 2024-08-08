@@ -60,3 +60,8 @@ a h2 {
 a h2:hover {
     text-decoration: underline;
 }
+
+.highlight-blue {
+    background-color: blue;
+    color: white;
+}
