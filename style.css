@@ -62,6 +62,6 @@ a h2:hover {
 }
 
 .highlight-blue {
-    background-color: blue;
+    background-color: rgba(180, 219, 255, 0.463);
     color: white;
 }
