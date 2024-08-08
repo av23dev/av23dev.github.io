@@ -71,7 +71,7 @@ a h2:hover {
 
 .line{
     width: 112px;
-    height: 47px;
-    border-bottom: 1px solid black;
+    height: 5px;
+    border-bottom: 5px solid black;
     position: absolute;
 }
