@@ -45,6 +45,7 @@ body {
 
 .main-link-container {
     display: flex;
+    height: 50px;
     width: 250px;
     justify-content: space-between;
     padding: 20px;
