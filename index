@@ -12,7 +12,7 @@
         <h1>Welcome</h1>
         <h2>I dunno</h2>
         <h3>Testingtingting</h3>
-        <a href="./about.html"><h2>Click for link/h2></a>
+        <a href="./about.html"><h2>Click for link</h2></a>
     </div>
 </body>
 </html>
