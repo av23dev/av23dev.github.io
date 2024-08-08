@@ -68,3 +68,10 @@ a h2:hover {
     background-color: rgba(180, 219, 255, 0.463);
     color: black;
 }
+
+.line{
+    width: 112px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
