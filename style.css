@@ -50,7 +50,7 @@ body {
     padding: 20px;
     background-color: #f0f0f0;
     text-align: right;
-    margin-right: auto;
+    justify-self: end;
 }
 
 h1, h2, h3 {
