@@ -108,8 +108,9 @@ a h2:hover {
 }
 
 .line{
-    width: 112px;
-    height: 5px;
-    border-bottom: 5px solid black;
+    width: 60%;
+    height: 0px;
+    border-bottom: 3px solid black;
     position: relative;
+    margin: 0 auto;
 }
