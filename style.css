@@ -17,14 +17,9 @@ body {
     grid-gap: 10px;
 
     margin-top: 0px;
-    height: 35px;
     max-width: 1200px;
     margin: 0 auto;
     /*padding: 20px;*/
-}
-
-.right-text {
-    text-align: right;
 }
 
 .outer-container {
@@ -32,6 +27,7 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 45px;
 }
 
 .containerBody {
@@ -113,6 +109,10 @@ a h2:hover {
 .highlight-blue {
     background-color: rgba(180, 219, 255, 0.463);
     color: black;
+}
+
+.right-text {
+    text-align: right;
 }
 
 .line{
