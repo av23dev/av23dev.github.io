@@ -47,7 +47,7 @@ body {
 .main-link-container {
     display: flex;
     height: auto;
-    width: 275px;
+    width: auto;
     justify-content: space-between;
     justify-self: end;
     /*padding: 20px;*/
