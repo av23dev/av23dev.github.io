@@ -13,11 +13,10 @@ body {
     grid-gap: 10px;
 
     margin-top: 0px;
-    height: 40px;
+    height: 35px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
 }
 
 .right-text {
@@ -47,12 +46,13 @@ body {
 
 .main-link-container {
     display: flex;
-    height: 50px;
+    height: 35px;
     width: 275px;
     justify-content: space-between;
     padding: 20px;
     text-align: right;
     justify-self: end;
+    margin-top: 0px;
 }
 
 h1, h2, h3 {
