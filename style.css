@@ -49,6 +49,7 @@ body {
     height: auto;
     width: 275px;
     justify-content: space-between;
+    justify-self: end;
     /*padding: 20px;*/
     text-align: right;
     top: 0;
