@@ -117,6 +117,14 @@ a h2:hover {
     text-align: right;
 }
 
+.title-line{
+    width: 100%;
+    height: 0px;
+    border-bottom: 6px grey;
+    position: relative;
+    margin: 0 auto;
+}
+
 .line{
     width: 100%;
     height: 0px;
