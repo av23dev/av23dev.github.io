@@ -33,13 +33,13 @@ body {
 .containerBody {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     /*background-color: #feffe9;*/
 }
 
 .outer-containerBody {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     background-color: #feffe9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
