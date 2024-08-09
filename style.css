@@ -51,7 +51,8 @@ body {
     justify-content: space-between;
     /*padding: 20px;*/
     text-align: right;
-    justify-self: end;
+    top: 0;
+    right: 0;
     margin-top: 0px;
 }
 
