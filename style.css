@@ -144,7 +144,7 @@ a h2:hover {
 }
 
 .responsive-video {
-    width: 100px;
+    width: 80%;
     height: auto;
     /*max-width: 400px;*/
 }
