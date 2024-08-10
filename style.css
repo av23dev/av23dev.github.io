@@ -44,7 +44,7 @@ body {
 
 .vert-flexbox {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .containerBody {
