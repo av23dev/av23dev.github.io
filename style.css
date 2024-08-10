@@ -145,6 +145,6 @@ a h2:hover {
 
 .responsive-video {
     width: 100%;
-    height: auto; /* Maintains aspect ratio */
-    max-width: 800px; /* Optional max width */
+    height: auto;
+    max-width: 400px;
 }
