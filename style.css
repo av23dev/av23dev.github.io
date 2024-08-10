@@ -39,9 +39,11 @@ body {
     
     max-width: 1000px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .vert-flexbox {
+    padding: 0px;
     display: flex;
     flex-direction: column;
 }
