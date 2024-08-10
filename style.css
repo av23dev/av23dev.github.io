@@ -42,6 +42,11 @@ body {
     padding: 20px;
 }
 
+.vert-flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
 .containerBody {
     margin: 0 auto;
     width: 1000px;
