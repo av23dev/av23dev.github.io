@@ -58,6 +58,16 @@ body {
     gap: 15px;
 }
 
+.main-page-project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 h1, h2, h3 {
     color: #333;
 }
