@@ -42,6 +42,10 @@ body {
     padding: 20px;
 }
 
+.containerBody {
+    width: 1200;
+}
+
 .outer-containerBody {
     width: 100%;
     padding: 10px;
