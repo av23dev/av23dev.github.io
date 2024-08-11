@@ -112,7 +112,7 @@ a {
     color: #007bff;
 }
 
-a:hover {
+/*a:hover {
     text-decoration: underline;
 }
 
@@ -124,7 +124,7 @@ a h2 {
 
 a h2:hover {
     text-decoration: underline;
-}
+}*/
 
 .highlight-blue {
     background-color: rgba(180, 219, 255, 0.463);
