@@ -154,5 +154,6 @@ a h2:hover {
 .responsive-video {
     width: 90%;
     height: auto;
+    margin-top: 5px;
     /*max-width: 400px;*/
 }
