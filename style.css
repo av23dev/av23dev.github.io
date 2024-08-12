@@ -11,6 +11,10 @@ body {
     background-color: #f4f4f4;
 }
 
+p {
+    margin-bottom: 5px;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
