@@ -43,6 +43,11 @@ body {
     padding: 20px;
 }
 
+.project-page-body-container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
 .vert-flexbox {
     margin-top: 0px;
     padding: 0px;
