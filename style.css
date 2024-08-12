@@ -182,6 +182,6 @@ a h2:hover {
 }
 
 .center-image {
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    margin: auto;
 }
