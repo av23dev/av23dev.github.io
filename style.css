@@ -11,10 +11,6 @@ body {
     background-color: #f4f4f4;
 }
 
-p {
-     line-height: 1.5em;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
