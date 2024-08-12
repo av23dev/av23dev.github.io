@@ -20,6 +20,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     /*padding: 20px;*/
+    overflow: visible;
 }
 
 .outer-container {
@@ -52,7 +53,6 @@ body {
 .containerBody {
     margin: 0 auto;
     width: 1000px;
-    overflow: visible;
 }
 
 .outer-containerBody {
