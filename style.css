@@ -184,4 +184,5 @@ a h2:hover {
 .center-image {
     position: relative;
     margin: auto;
+    max-width: 100%;
 }
