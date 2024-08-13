@@ -47,29 +47,36 @@
                     <h3>Basic Movement System</h3>
                     <p>The movement is rigid body based and moves through adding force based on the player’s inputs. There is a constant force that decelerates the player based on different states like if the player is crouching, walking, off the ground, etc. </p>
 
-                    <h3>Design and The Reasoning Behind</h3>
-                    <p>The map has a number of cosmetic choices. This so I can learn about Unreal’s artistic aspects.</p>
-                    <p>I learned about the material system and the particle system in Unreal along with post processing, bloom, foliage, light emission, skyboxes, and more.</p>
+                    <h3>Advanced Movement</h3>
+                    <p>There is movement in this project that is more complex than just walking or jumping.</p>
+                    <p>Mantling is when a player is on a ledge and they climb over said ledge. This is checked by two checks: A sphere in front of the player to see if they are facing a ledge/wall and a capsule checking if the area above the ledge is clear.</p>
+                    <p>Wall running is checked with two capsules on each side of the player. If the capsules collide with a wall and if the player is off the ground then the player experiences decreased gravity, simulating wall running.</p>
+                    <p>Sliding is in the project and it gives off a small boost in whatever direction you are going. It also helps conserve velocity when you are going fast.</p>
+                    <p>Lunging moves the player forward quickly with a button press but only in the horizontal plane and slows down the player at the end. In addition to that the player must be grounded to trigger this. There is a cooldown to lunging</p>
+                    <p>Air Diving stops a player’s horizontal movement and after a short delay will send the player straight down. Can only be triggered while in the air.</p>
+
+                    <h3>Movement Techniques</h3>
+                    <p>This project was inspired by games with advanced movement systems. In some games there are exploits and movement techniques that the player can use to increase their movement options. Hit The Skip leans into using these movement techniques.</p>
+                    <p>Mantle Glide is when the player presses jump and crouch at the same time shortly after mantling. This results in propelling the player forward at a fast speed. This technique is heavily inspired by Apex Legend’s / Titanfall’s Superglide.</p>
+                    <p>Dive Skating is triggered by lunging forward off of a ledge, jumping and then very quickly diving after. This results in the player being launched forward at great speed. Dive skating is possible because at the end of the lunging animation the player loses their velocity. Diving in the middle of the lunge cancels the animation while jumping cancels the dive which means that the velocity is carried over in the end. This movement technique is heavily inspired by Destiny 2’s Well Skating.</p>
 
                     <h3>Biggest Challenges</h3>
-                    <p>The biggest challenge was learning C++ and Unreal Engine. I transitioned from C# and Unity but was able to understand fast. Unreal Engine structures things differently than Unity, that includes how C++ works, but I was able to adapt quickly and produce this project from scratch.</p>
-                    <p>The structure of Unreal Engine also challenged me. One example is Unity uses Gameobjects with components and scripts attached to them, while Unreal uses a class (“script”) as the base which then attaches components to them. There are a number of other differences in structure that challenged me, but I was able to learn in the end.</p>
+                    <p>Starting off, one big challenge was keeping the basic movement consistent. Jumping accelerated the player faster than the ground speed due to lessened drag. I didn’t want to limit speed so capping the speed wasn’t a solution to this acceleration. Removing control while airborne means the player won’t accelerate any faster, however it feels bad not being able to strafe. To solve this I used a dot product to determine if the player movement is lining up with their velocity. If their movement is aligned with their velocity then don’t add force; don’t accelerate any faster. If they are putting inputs moving away from the current velocity direction then allow the player to strafe left, right, or back.</p>
+                    <p>Another challenge in this project is the movement techniques. Most of these techniques were based on exploits from other games. This means that I would need to reverse engineer the process of the movement technique and make guesses as to why the original movement techniques works in the first place. For example, I assume that Well Skating from Destiny 2 is caused by velocity being conserved through animation canceling, so I had to make my own version of what I think is happening.</p>
                 </div>
 
                 <div class="vert-flexbox">
                     <div style="height: 40px;"></div>
                     <div style="text-align: right;">
-                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/KNrh3Sq6_9M?si=od8vT512DZKtpqiX&amp;controls=0&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
+                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/RvPEoRAOWsw?si=63wOC9dCQQXU78ua&amp;controls=0&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     
-                    <img src="Graphics/Images/IMGSphereAndNow%20(1).png" class="center-image">
-                    <img src="Graphics/Images/IMGSphereAndNow%20(2).png" class="center-image">
-                    <img src="Graphics/Images/IMGSphereAndNow%20(3).png" class="center-image">
-                    <img src="Graphics/Images/IMGSphereAndNow%20(4).png" class="center-image">
-                    <img src="Graphics/Images/IMGSphereAndNow%20(5).png" class="center-image">
-                    <img src="Graphics/Images/IMGSphereAndNow%20(6).png" class="center-image">
-                
+                    <img src="Graphics/Images/IMGHitTheSkip%20(1).png" class="center-image">
+                    <img src="Graphics/Images/IMGHitTheSkip%20(2).png" class="center-image">
+                    <img src="Graphics/Images/IMGHitTheSkip%20(3).png" class="center-image">
+                    <img src="Graphics/Images/IMGHitTheSkip%20(4).png" class="center-image">
+            
                 </div>
             </div>
         </div>
