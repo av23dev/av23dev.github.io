@@ -183,8 +183,7 @@ a h2:hover {
 
 .center-image {
     display: block;
-    /*margin-left: auto;*/
-    margin-right: 0;
+    float: right;
     width: 500px;
     margin-top: 15px;
 }
