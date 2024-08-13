@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MAIN PAGE</title>
+</head>
+<body>
+    
+    <div class="outer-container">
+        <div class="container">
+            <a href="index.html" class="plain-link" style="word-break: keep-all; white-space: nowrap;"><h1>Game Portfolio of av23sgn</h1></a>
+            <div class="main-link-container">
+                <a href="./about.html" class="plain-link"><h4>About</h4></a>
+                <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
+                <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
+                <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
+            </div>
+        </div>
+    </div>
 
+    <div class="title-line"></div>
+    
+    <div class="outer-containerBody">
+        <div class="containerBody">
+            <h2 class="center-text highlight-blue" style="margin-top: 10px;">Weapons In a Cube - A Test in Weapon Programming</h2>
+            <div class="project-page-body-container">
+                <div class="vert-flexbox">
+                    <h2 style="text-decoration: underline;">About</h2>
+                    <p>Weapons in a Cube was a project developed by me in Unity/C# to explore flexible weapon system structures and unique weapon abilities in video games.</p>
+                    <p>I designed and developed this entire project.</p>
+
+                    <h2 style="text-decoration: underline;">Important Points</h2>
+                    <ul>
+                        <li style="margin-bottom: 5px;">This project is heavily focused on the technical aspect of weapon design</li>
+                        <li style="margin-bottom: 5px;">Flexible weapon script system with multiple weapons to switch between</li>
+                        <li style="margin-bottom: 5px;">Unique weapons that perform different abilities that are triggered by different conditions</li>
+                    </ul>
+
+                    <div class="line" style="margin-top:40px; margin-bottom:25px;"></div>
+
+                    <h2 style="text-decoration: underline;">Details</h2>
+                    <h3>Weapons</h3>
+                    <p>There are currently 4 weapons:</p>
+                    <p>Personal Space - Explosive pistol that increases in blast radius and damage the further you are from the target. Weak close range.</p>
+                    <p>Ping Pong - A hit scan weapon that triggers an explosion on a headshot/precision kill. The explosion affects other enemies and primes them to explode shortly after, this effect chains explosions for a number of iterations.</p>
+                    <p>Upfront Notification - A hit scan weapon that launches the opponent in the air after two successful hits. Enemies affected by this effect receive increased damage.</p>
+                    <p>This project is a tech demo and focused heavily on the technical side. Visual effects are minimal and each weapon has a placeholder model. Weapon explosions are visualized with a red sphere.</p>
+
+                    <h3>Weapon System/h3>
+                    <p>The weapon system consists of a central script that changes values depending on what weapon is equipped. This central script handles the fire input from the player and helps keep things organized.</p>
+                    <p>Special weapon effects are handled on separate scripts that are called from the central script. This is organized as such to not bloat the central weapon file and to organize everything clearly.</p>
+                    
+                    <h3>Biggest Challenges</h3>
+                    <p>Some of the weapons were deceptively harder to program than first anticipated. Most notably Upfront Notification and Ping Pong.</p>
+                    <p>Upfront notification was a bit more difficult because of how the weapon kept track of which target it hit twice. At first I made it so that a hit would increase the effect condition by one (the effect is triggered after two hits). This was a problem since you can hit an enemy once and then hit another one to trigger the effect which was not intended. To solve this, I needed to store which enemy the player hit and reset the effect condition back to zero if you hit another target.</p>
+                    <p>Ping Pong was especially difficult because at first the explosion function was called by each affected enemy at the same time. This resulted in duplicate explosions intersecting with each other. To fix this I instead added the affected enemies in a list and called the explosion function in a loop for each enemy. I also added in checks to make sure that the explosion won’t affect the same enemy again.</p>
+
+                </div>
+
+                <div class="vert-flexbox">
+                    <div style="height: 40px;"></div>
+                    <div style="text-align: right;">
+
+                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/MBLbB4lBfGA?si=8RmNBv1S7Y9OLiU3&amp;controls=0&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(1).png" class="center-image">
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(2).png" class="center-image">
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(3).png" class="center-image">
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(4).png" class="center-image">
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(5).png" class="center-image">
+                    <img src="Graphics/Images/IMGWeaponsInCube%20(6).png" class="center-image">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
