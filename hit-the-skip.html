@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MAIN PAGE</title>
+</head>
+<body>
+    
+    <div class="outer-container">
+        <div class="container">
+            <a href="index.html" class="plain-link" style="word-break: keep-all; white-space: nowrap;"><h1>Game Portfolio of av23sgn</h1></a>
+            <div class="main-link-container">
+                <a href="./about.html" class="plain-link"><h4>About</h4></a>
+                <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
+                <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
+                <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
+            </div>
+        </div>
+    </div>
 
+    <div class="title-line"></div>
+    
+    <div class="outer-containerBody">
+        <div class="containerBody">
+            <h2 class="center-text highlight-blue" style="margin-top: 10px;">Hit The Skip</h2>
+            <div class="project-page-body-container">
+                <div class="vert-flexbox">
+                    <h2 style="text-decoration: underline;">About</h2>
+                    <p>Hit The Skip was a project developed by me in Unity/C#. It’s a project focused on movement mechanics like wall running and sliding. It also addresses making basic movement solid. </p>
+                    <p>The unique aspect of this project is that there are movement techniques that are inspired by exploits from other games, such as Well Skating from Destiny 2.</p>
+                    <p>I designed and developed this entire project.</p>
+
+                    <h2 style="text-decoration: underline;">Important Points</h2>
+                    <ul>
+                        <li style="margin-bottom: 5px;">Certain input combinations or conditions allow for special movement techniques</li>
+                        <li style="margin-bottom: 5px;">This project is heavily focused on the technical aspect of character movement</li>
+                        <li style="margin-bottom: 5px;">A movement system that includes: sliding, wall running, mantling, air strafing</li>
+                        <li style="margin-bottom: 5px;">Consistent basic movement system; things like jumping or moving diagonally does not increase speed</li>
+                    </ul>
+
+                    <div class="line" style="margin-top:40px; margin-bottom:25px;"></div>
+
+                    <h2 style="text-decoration: underline;">Details</h2>
+                    <h3>Basic Movement System</h3>
+                    <p>The movement is rigid body based and moves through adding force based on the player’s inputs. There is a constant force that decelerates the player based on different states like if the player is crouching, walking, off the ground, etc. </p>
+
+                    <h3>Design and The Reasoning Behind</h3>
+                    <p>The map has a number of cosmetic choices. This so I can learn about Unreal’s artistic aspects.</p>
+                    <p>I learned about the material system and the particle system in Unreal along with post processing, bloom, foliage, light emission, skyboxes, and more.</p>
+
+                    <h3>Biggest Challenges</h3>
+                    <p>The biggest challenge was learning C++ and Unreal Engine. I transitioned from C# and Unity but was able to understand fast. Unreal Engine structures things differently than Unity, that includes how C++ works, but I was able to adapt quickly and produce this project from scratch.</p>
+                    <p>The structure of Unreal Engine also challenged me. One example is Unity uses Gameobjects with components and scripts attached to them, while Unreal uses a class (“script”) as the base which then attaches components to them. There are a number of other differences in structure that challenged me, but I was able to learn in the end.</p>
+                </div>
+
+                <div class="vert-flexbox">
+                    <div style="height: 40px;"></div>
+                    <div style="text-align: right;">
+                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/KNrh3Sq6_9M?si=od8vT512DZKtpqiX&amp;controls=0&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <img src="Graphics/Images/IMGSphereAndNow%20(1).png" class="center-image">
+                    <img src="Graphics/Images/IMGSphereAndNow%20(2).png" class="center-image">
+                    <img src="Graphics/Images/IMGSphereAndNow%20(3).png" class="center-image">
+                    <img src="Graphics/Images/IMGSphereAndNow%20(4).png" class="center-image">
+                    <img src="Graphics/Images/IMGSphereAndNow%20(5).png" class="center-image">
+                    <img src="Graphics/Images/IMGSphereAndNow%20(6).png" class="center-image">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
