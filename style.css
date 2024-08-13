@@ -50,6 +50,7 @@ p {
 .project-page-body-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    background: #000000;
 }
 
 .vert-flexbox {
