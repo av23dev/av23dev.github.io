@@ -175,7 +175,7 @@ a h2:hover {
     margin: 0 auto;
 }
 
-.line{
+.thick-short-line{
     width: 60%;
     height: 0px;
     border-bottom: 12px solid black;
