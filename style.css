@@ -175,6 +175,14 @@ a h2:hover {
     margin: 0 auto;
 }
 
+.line{
+    width: 60%;
+    height: 0px;
+    border-bottom: 12px solid black;
+    position: relative;
+    margin: 0 auto;
+}
+
 .responsive-video {
     width: 90%;
     height: auto;
