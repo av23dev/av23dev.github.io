@@ -45,32 +45,39 @@
 
                     <h2 style="text-decoration: underline;">Details</h2>
                     <h3>Enemy Design</h3>
-                    <ol>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
-                    </ol>
-                    <p>There are currently 4 weapons:</p>
                     <p>Enemies are designed with unique abilities and movement. Currently there are 8 enemies in the game:</p>
-                    <p>Tangential - Rocket/Grenade launcher that does exponentially more damage (with a damage cap) the further the enemy is away from the center of the blast radius. Direct hits are weak.</p>
-                    <p>Ping Pong - A hit scan weapon that triggers an explosion on a headshot/precision kill. The explosion affects other enemies and primes them to explode shortly after, this effect chains explosions for a number of iterations.</p>
-                    <p>Upfront Notification - A hit scan weapon that launches the opponent in the air after two successful hits. Enemies affected by this effect receive increased damage.</p>
-                    <p>This project is a tech demo and focused heavily on the technical side. Visual effects are minimal and each weapon has a placeholder model. Weapon explosions are visualized with a red sphere.</p>
+                    <ol>
+                        <li style="margin-bottom: 5px;">A hovering cube with a ranged slice and area of effect melee</li>
+                        <li style="margin-bottom: 5px;">A cannon that fires cannonballs and lunges</li>
+                        <li style="margin-bottom: 5px;">A 2D enemy on the screen. Player needs to fight it in a 2D platformer</li>
+                        <li style="margin-bottom: 5px;">A large floating fortress that fires arrows and drags a spiked ball</li>
+                        <li style="margin-bottom: 5px;">A humanoid with a rifle</li>
+                        <li style="margin-bottom: 5px;">A floating sphere that fires projectiles and deploys a field that manipulates movement</li>
+                        <li style="margin-bottom: 5px;">A fast humanoid with pike. Closing the distance will force them to switch to a knife</li>
+                        <li style="margin-bottom: 5px;">A floating, hidden, low poly sphere that darkens the area around the player. Only reveals itself when preparing to attack, player must counterattack in time to stun and damage it</li>
+                        
+                    </ol>
 
-                    <h3>Weapon System</h3>
-                    <p>The weapon system consists of a central script that changes values depending on what weapon is equipped. This central script handles the fire input from the player and helps keep things organized.</p>
-                    <p>Special weapon effects are handled on separate scripts that are called from the central script. This is organized as such to not bloat the central weapon file and to organize everything clearly.</p>
+                    <h3>Player Abilites</h3>
+                    <p>Players have access to a number of abilities and gain more through upgrade stations found throughout the area:</p>
+                    <ol>
+                        <li style="margin-bottom: 5px;">A rocket launcher launcher on a cooldown. (With rocket jumping of course)</li>
+                        <li style="margin-bottom: 5px;">An ability which makes the player invulnerable for a small time</li>
+                        <li style="margin-bottom: 5px;">A throwable jar that applies a status effect</li>
+                        <li style="margin-bottom: 5px;">A short range teleport</li>
+                    </ol>
                     
-                    <h3>Biggest Challenges</h3>
-                    <p>Some of the weapons were deceptively harder to program than first anticipated. Most notably Upfront Notification and Ping Pong.</p>
-                    <p>Upfront notification was a bit more difficult because of how the weapon kept track of which target it hit twice. At first I made it so that a hit would increase the effect condition by one (the effect is triggered after two hits). This was a problem since you can hit an enemy once and then hit another one to trigger the effect which was not intended. To solve this, I needed to store which enemy the player hit and reset the effect condition back to zero if you hit another target.</p>
-                    <p>Ping Pong was especially difficult because at first the explosion function was called by each affected enemy at the same time. This resulted in duplicate explosions intersecting with each other. To fix this I instead added the affected enemies in a list and called the explosion function in a loop for each enemy. I also added in checks to make sure that the explosion won’t affect the same enemy again.</p>
+                    <h3>Status Effects</h3>
+                    <p>I created a status effect system in the game. Enemies can be inflicted with these effects. There are 4 base elements and can combine with one another to create a total of 6 combined elements.</p>
 
+                    <h3>Player Weapons</h3>
+                    <p>This was one of my first projects that has multiple, switchable weapons. This allowed me to learn how to construct a flexible weapon system. It involves a central universal weapon script that changes depending on what weapon is active. This is the basics that helped me develop the other project I have: Weapons in a Cube.</p>
+
+                    <h3>Biggest Challenges</h3>
+                    <p>A problem that was really confusing for me was that when I played the game hitboxes would seemingly randomly start to become inconsistent. After extensive troubleshooting I found out that projectiles flying off into empty space caused this. In Unity, if an object flies too far from the world origin then it causes colliders to break. This problem was especially hard since the cause and effect are not very closely related.</p>
+                    <p>Getting a working weapon/ability system was a little hard, but the centralized approach that I took allowed it to be very flexible. The abilities are bound to 1-4 on the keyboard, with the centralized system it allows for the abilities to be placed in any of those keys in any order.</p>
+                    <p>Working with multiplayer was complex and took a while to understand the basics of. While not in the current build, it was working in an earlier version and I learned a lot of networking from it. I’ve worked with the system of server communication, RPCs, network objects, and more.</p>
+                    
                 </div>
 
                 <div class="vert-flexbox">
