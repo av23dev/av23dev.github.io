@@ -13,9 +13,10 @@ body {
 }
 
 footer {
-  text-align: center;
-  background-color: Gray;
-  color: white;
+    text-align: center;
+    background-color: Gray;
+    color: white;
+    height: 200px;
 }
 
 p {
