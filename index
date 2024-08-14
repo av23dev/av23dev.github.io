@@ -11,12 +11,12 @@
     
     <div class="outer-container">
         <div class="container">
-            <h1><a href="index.html" class="plain-link" style="word-break: keep-all; white-space: nowrap;">Game Portfolio of av23sgn</a></h1>
+            <h1><a href="index" class="plain-link" style="word-break: keep-all; white-space: nowrap;">Game Portfolio of av23sgn</a></h1>
             <div class="main-link-container">
-                <a href="./about.html" class="plain-link"><h4>About</h4></a>
-                <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
-                <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
-                <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
+                <a href="./about" class="plain-link"><h4>About</h4></a>
+                <a href="index" class="plain-link"><h4>Game Projects</h4></a>
+                <a href="./3d-models" class="plain-link"><h4>3D Models</h4></a>
+                <a href="./contact" class="plain-link"><h4>Contact</h4></a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
 
             <div class="line"></div>
             
-            <a href="sphere-and-now.html" class="plain-link">
+            <a href="sphere-and-now" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Shotgun%20Step%20Preview%20Shorten.mp4" type="video/mp4">
@@ -49,7 +49,7 @@
 
             <div class="line"></div>
             
-            <a href="hit-the-skip.html" class="plain-link">
+            <a href="hit-the-skip" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Hit%20The%20Skip%20Preview%20Raw.mp4" type="video/mp4">
@@ -68,7 +68,7 @@
 
             <div class="line"></div>
             
-            <a href="weapons-in-a-cube.html" class="plain-link">
+            <a href="weapons-in-a-cube" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Weapon%20in%20Cube%20Preview.mp4" type="video/mp4">
@@ -88,7 +88,7 @@
 
             <div class="line"></div>
             
-            <a href="shotgun-step.html" class="plain-link">
+            <a href="shotgun-step" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Shotgun%20Step%20Preview%20Shorten.mp4" type="video/mp4">
