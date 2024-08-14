@@ -22,73 +22,7 @@
     </div>
 
     <div class="title-line"></div>
-    
-    <div class="outer-containerBody">
-        <div class="containerBody">
-            <h2 class="center-text highlight-blue" style="margin-top: 10px;">Shotgun Step - An Exercise in Enemy AI</h2>
 
-            
-            
-            <div class="project-page-body-container">
-                <div class="vert-flexbox">
-                    <h2 style="text-decoration: underline;">About</h2>
-                    <p>Shotgun Step was a project developed by me in Unity/C# to help improve my understanding of Enemy AI in video games.</p>
-                    <p>Fight an AI enemy with a lethal shotgun in narrow hallways. Awareness and good estimation is crucial.</p>
-                    <p>Developing this project has taught me about scalability, game balancing, and how to make AI not unfun by destroying you instantly.</p>
-                    <p>I designed and developed this entire project.</p>
-
-                    <h2 style="text-decoration: underline;">Important Points</h2>
-                    <ul>
-                        <li style="margin-bottom: 5px;">The Player fights one AI enemy in a close quarters, maze like area. The AI is spawned in a random position</li>
-                        <li style="margin-bottom: 5px;">Enemy AI checks corners and looks behind occasionally</li>
-                        <li style="margin-bottom: 5px;">Enemy AI can rush or retreat depending on health and ammo</li>
-                        <li style="margin-bottom: 5px;">Player’s can throw a bolt/screw (on a cooldown) to generate noise to attract or mislead the AI</li>
-                        <li style="margin-bottom: 5px;">Point blank shots kill opponents in 1 shot any further range removes half of their health</li>
-                        <li style="margin-bottom: 5px;">Players have 1 ammo. Reloading takes ~3 seconds and halves movement speed, making the person vulnerable</li>
-                        <li style="margin-bottom: 5px;">Players and the enemy mostly have the same abilities and limitations (same weapons, max ammo, reloading, health, etc.)</li>
-                    </ul>
-
-                    <div class="line" style="margin-top:40px; margin-bottom:25px;"></div>
-
-                    <h2 style="text-decoration: underline;">Details</h2>
-                    <h3>AI Navigation</h3>
-                    <p>To get the enemy moving, I quickly learned Unity’s built in navigation, NavMesh. However, the destination of the enemy needs to be determined through my own code. To do this, I have separated the enemy AI into three distinct states.</p>
-                    <p>The first state is Patrol. This is the default starting state. It chooses a random point in a sphere around the origin of the map. It then finds a valid path point closest to the selected random point and assigns that as the destination for which the AI moves towards. When the AI reaches the destination or after a few seconds, it repeats this process again.</p>
-                    <p>The second state is Sound Alert. This is triggered when the player throws a bolt on the ground to simulate sound. When the bolt hits the ground a random point in a small area around the bolt is selected and the AI moves towards it. If the AI sees the bolt then it goes back to the Patrol state.</p>
-                    <p>The third state is Player Contact. This is triggered when the AI sees the player. The AI then waits to shoot until either the player is close enough to kill in one shot or if they are far enough from the player. If the AI is hurt then it will rush the player in an attempt to kill in one shot, since the player only has one ammo. If the AI hits the player for half health then it retreats in an attempt to reload. The AI does not shoot at a medium range (See Gameplay Reasoning).</p>
-
-                    <h3>AI Checks</h3>
-                    <p>The AI occasionally looks behind and is able to check corners. For flexibility and simplicity, I have marked the corners found throughout the map. When the AI passes through these corners it checks left, right, forward, and back, but it ignores any direction that is just a wall. It is able to detect walls by periodically putting out a circle of raycasts and determining if the distance of the wall is too close.</p>
-                    
-                    <h3>Gameplay Reasoning</h3>
-                    <p>The game is designed to test a player’s skill of estimation. The player has to estimate where the enemy may be and the range to attack. </p>
-                    <p>According to the rules of the game if you are far when you shoot, you deal half health and have to reload (which is long and slows you down). A player or enemy can abuse this and rush an opponent while they are reloading, I’ve reinforced this idea by adding in a small speed boost when at half health. </p>
-                    <p>The solution is to be able to put enough distance between to be able to reload safely without getting in point blank range hence why the AI does not attack in medium range, and why it reloads and retreats when it fires a far shot.</p>
-                    <p>If the player is not aware enough or ineffectively uses their bolts then they may be surprised at point blank. Don’t worry though the AI has a small delay (approximately the same average human reaction time) before firing.</p>
-
-                    <h3>Biggest Challenges</h3>
-                    <p>First biggest challenge I faced was determining how the AI detects corners. I had to break down how people actually perceive corners and tried to apply that to the AI through raycasts. After working that out I realized that it would be too complex especially for the scope of this project so I simplified it down and marked the corner areas. The AI detects if it is in a corner area and then it checks its main directions.</p>
-                    <p>Another big challenge was the game design. I wanted to make the gameplay deeper than just seeing who shoots the fastest so I added in all these other factors to make it a little more complex. Balance was also in consideration, for example, I wanted to make the shotgun shoot multiple pellets, but I feel like it would be too inconsistent (even with a fixed spread) especially in a narrow space. So to simplify it, I made it a slug with damage falloff.</p>
-                </div>
-
-                <div class="vert-flexbox">
-                    <div style="height: 40px;"></div>
-                    <div style="text-align: right;">
-                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/SfMKBGL1zWg?si=vPhXtkLQP1r8y3Fm&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    
-                    <img src="Graphics/Images/IMGShotgunStep%20(1).png" class="center-image">
-                    <img src="Graphics/Images/IMGShotgunStep%20(2).png" class="center-image">
-                    <img src="Graphics/Images/IMGShotgunStep%20(3).png" class="center-image">
-                    <img src="Graphics/Images/IMGShotgunStep%20(4).png" class="center-image">
-                    <img src="Graphics/Images/IMGShotgunStep%20(5).png" class="center-image">
-                    <img src="Graphics/Images/IMGShotgunStep%20(6).png" class="center-image">
-            
-                </div>
-            </div>
-        </div>
-    </div>
     
 </body>
 </html>
