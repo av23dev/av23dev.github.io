@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MAIN PAGE</title>
+</head>
+<body>
+    
+    <div class="outer-container">
+        <div class="container">
+            <a href="index.html" class="plain-link" style="word-break: keep-all; white-space: nowrap;"><h1>Game Portfolio of av23sgn</h1></a>
+            <div class="main-link-container">
+                <a href="./about.html" class="plain-link"><h4>About</h4></a>
+                <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
+                <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
+                <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-line"></div>
+    
+    <div class="outer-containerBody">
+        <div class="containerBody">
+            <h2 class="center-text highlight-blue" style="margin-top: 10px;">Incoming Threat</h2>
+            <div class="project-page-body-container">
+                <div class="vert-flexbox">
+                    <h2 style="text-decoration: underline;">About</h2>
+                    <p>Barbecue game is a project designed by me in Unity/C#. It was a challenge to see how fast I am able to develop a prototype. </p>
+                    <p>The core of the project was developed around 3 days. This project taught me efficiency in game development and mechanics in management games.</p>
+                    <p>I designed and developed this entire project.</p>
+
+                    <h2 style="text-decoration: underline;">Important Points</h2>
+                    <ul>
+                        <li style="margin-bottom: 5px;">Serve skewers of meat and vegetables depending on customer orders</li>
+                        <li style="margin-bottom: 5px;">If customer’s wait too long or you get an order wrong then you get a strike, get three and you lose</li>
+                        <li style="margin-bottom: 5px;">Inspired by friends trying to start a barbecue business</li>
+                    </ul>
+
+                    <div class="line" style="margin-top:40px; margin-bottom:25px;"></div>
+
+                    <h2 style="text-decoration: underline;">Details</h2>
+                    <h3>Gameplay</h3>
+                    <p>The gameplay consists of reading the customer’s request, assembling the skewer of food, cooking it, and serving it to the customer all while that overlaps with serving other customers.</p>
+                    <p>As stated before, if customer’s wait too long or you get an order wrong then you get a strike. If you get three then you lose. Try to serve as many customers as you can.</p>
+
+                    <h3>Biggest Challenges</h3>
+                    <p>This project was done in a short amount of time, approximately 3 days. The biggest challenge here was to keep the game organized and structured when making it under pressure. Throughout it all, it still came out functioning and with minimal game breaking bugs.</p>
+                    <p>Another big challenge was making the interaction of the game work effectively. Click and dragging objects needed to be done carefully to prevent duplicates and holding two objects at a time. The dragged object’s position was also interesting to work with. I needed to keep the objects on a specific Y level to be able to drag them between workstations. In the end, I was able to solve all of these problems.</p>
+                </div>
+
+                <div class="vert-flexbox">
+                    <div style="height: 40px;"></div>
+                    <div style="text-align: right;">
+                        
+                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/UwBJ_RSdgCQ?si=HANFx4p1Ao_EdRYR&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <img src="Graphics/Images/IMGIncomingThreat%20(1).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(2).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(3).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(4).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(5).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(6).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(7).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(8).png" class="center-image">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
