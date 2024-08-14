@@ -12,6 +12,12 @@ body {
     /*background-color: #f4f4f4;*/
 }
 
+footer {
+  text-align: center;
+  background-color: Gray;
+  color: white;
+}
+
 p {
     margin: 11px;
 }
