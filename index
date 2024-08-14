@@ -13,10 +13,10 @@
         <div class="container">
             <h1><a href="index" class="plain-link" style="word-break: keep-all; white-space: nowrap;">Game Portfolio of av23sgn</a></h1>
             <div class="main-link-container">
-                <a href="./about" class="plain-link"><h4>About</h4></a>
-                <a href="index" class="plain-link"><h4>Game Projects</h4></a>
-                <a href="./3d-models" class="plain-link"><h4>3D Models</h4></a>
-                <a href="./contact" class="plain-link"><h4>Contact</h4></a>
+                <a href="./about.html" class="plain-link"><h4>About</h4></a>
+                <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
+                <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
+                <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
 
             <div class="line"></div>
             
-            <a href="sphere-and-now" class="plain-link">
+            <a href="sphere-and-now.html" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Shotgun%20Step%20Preview%20Shorten.mp4" type="video/mp4">
@@ -49,7 +49,7 @@
 
             <div class="line"></div>
             
-            <a href="hit-the-skip" class="plain-link">
+            <a href="hit-the-skip.html" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Hit%20The%20Skip%20Preview%20Raw.mp4" type="video/mp4">
@@ -68,7 +68,7 @@
 
             <div class="line"></div>
             
-            <a href="weapons-in-a-cube" class="plain-link">
+            <a href="weapons-in-a-cube.html" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Weapon%20in%20Cube%20Preview.mp4" type="video/mp4">
@@ -88,7 +88,7 @@
 
             <div class="line"></div>
             
-            <a href="shotgun-step" class="plain-link">
+            <a href="shotgun-step.html" class="plain-link">
                 <div class="main-page-project-container">
                     <video autoplay loop muted class="responsive-video">
                         <source src="Graphics/Shotgun%20Step%20Preview%20Shorten.mp4" type="video/mp4">
@@ -100,6 +100,44 @@
                         <p style="margin-bottom:0;">This entire project was made by me in Unity / C#.</p>
                         <p style="margin-bottom:0;">Notably, the AI and gameplay was programmed by me.</p>
                         <p style="margin-bottom:0;">An FPS game demo where you fight an enemy AI through narrow hallways. The main focus is the Enemy AI. It checks corners, retreats, rushes, etc. depending on the situation it is in.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!------------------------------------------------------------------------------------->
+
+            <div class="line"></div>
+            
+            <a href="incoming-threat.html" class="plain-link">
+                <div class="main-page-project-container">
+                    <video autoplay loop muted class="responsive-video">
+                        <source src="Graphics/INC%20THR%20Gif%20Raw%202.mp4" type="video/mp4">
+                    </video>
+                    <div class="vert-flexbox">
+
+                        <h3><u>Incoming Threat</u></h3>
+
+                        <p style="margin-bottom:0;">This entire project was made by me in Unity / C#.</p>
+                        <p style="margin-bottom:0;">An FPS game demo where you fight unique enemies one at a time. This is a coding exercise in creating unique interactions for each enemy. This is also a test on how to make the gameplay difficult without only just adjusting health and damage values.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!------------------------------------------------------------------------------------->
+
+            <div class="line"></div>
+            
+            <a href="barbecue-game.html" class="plain-link">
+                <div class="main-page-project-container">
+                    <video autoplay loop muted class="responsive-video">
+                        <source src="Graphics/INC%20THR%20Gif%20Raw%202.mp4" type="video/mp4">
+                    </video>
+                    <div class="vert-flexbox">
+
+                        <h3><u>Barbecue Game</u></h3>
+
+                        <p style="margin-bottom:0;">This entire project was made by me in Unity / C#.</p>
+                        <p style="margin-bottom:0;">A game made in a short span of time. This project was practice to see how quickly I could develop a prototype of a game. It's a multitasking game where you serve skewers of food to multiple customers under pressure.</p>
                     </div>
                 </div>
             </a>
