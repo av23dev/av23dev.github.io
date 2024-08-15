@@ -16,13 +16,10 @@ body {
 }
 
 footer {
-    position: fixed;
     text-align: center;
     background-color: Gray;
     color: white;
     height: 125px;
-    margin-bottom: 0px;
-    bottom: 0;
     width: 100%;
 }
 
