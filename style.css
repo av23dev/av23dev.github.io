@@ -34,7 +34,6 @@ p {
     grid-gap: 10px;
     text-align: center;
     margin-top: auto;
-    margin-left: auto;
     max-width: 1400px;
     /*margin: 0 auto;*/
     /*padding: 20px;*/
@@ -48,7 +47,6 @@ p {
     background-color: #fff;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
     height: 80px;
-    margin-top: 20px;
 }
 
 .main-page-project-container {
