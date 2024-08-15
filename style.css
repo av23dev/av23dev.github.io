@@ -37,11 +37,10 @@ p {
 
 .outer-container {
     width: 100%;
-    margin-top: 20px;
     /*padding: 20px;*/
     background-color: #fff;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
-    height: 60px;
+    height: 80px;
 }
 
 .main-page-project-container {
