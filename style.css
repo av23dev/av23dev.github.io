@@ -32,8 +32,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    text-align: center;
-    margin-top: auto;
+    place-items: center;
     max-width: 1400px;
     /*margin: 0 auto;*/
     /*padding: 20px;*/
