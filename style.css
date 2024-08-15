@@ -32,10 +32,9 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
-    place-items: center;
     max-width: 1400px;
     /*margin: 0 auto;*/
-    /*padding: 20px;*/
+    padding: 20px;
 
     overflow: visible;
 }
