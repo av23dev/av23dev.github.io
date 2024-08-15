@@ -33,7 +33,7 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     max-width: 1400px;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     padding: 20px;
 
     overflow: visible;
