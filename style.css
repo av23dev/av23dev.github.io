@@ -18,6 +18,9 @@ footer {
     color: white;
     height: 125px;
     margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 p {
