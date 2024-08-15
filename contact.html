@@ -25,46 +25,24 @@
     
     <div class="outer-containerBody">
         <div class="containerBody">
-            <div style="height: 0px;"></div>
-            <h2 class="center-text">3D Models</h2>
-
-            <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/6QC9-Lmxa7k?si=uqufHO6x7wTo6x_X&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p style="margin-bottom: 30px; text-align: center">Pistol Animation</p>
-
-            <div class="line"></div>
-
-            <img src="Graphics/Images/Blocky%20Rifle.png" class="center-image">
-            <p style="margin-bottom: 30px; text-align: center">Strange Blocky Rifle</p>
-        
+            <div class="container">
+              <form action="action_page.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
         </div>
     </div>
     
 </body>
 </html>
-
-
-
-<div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
