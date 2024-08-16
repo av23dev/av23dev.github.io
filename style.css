@@ -25,8 +25,8 @@ footer {
     text-align: center;
     background-color: Gray;
     color: white;
-    height: 125px;
-    /*min-height: 125px;*/
+    /*height: 125px;*/
+    min-height: 125px;
     width: 100%;
 }
 
