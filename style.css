@@ -211,6 +211,7 @@ a h2:hover {
 .center-image {
     display: block;
     margin-left: auto;
+    margin-right: auto;
     width: 450px;
     height: auto;
     margin-top: 15px;
