@@ -225,8 +225,11 @@ a h2:hover {
     margin-top: 15px;*/
 }
 
-
+.hover-background{
+    //None
+}
+    
 .hover-background:hover{
-     background-color: yellow;
+     background: #3374C2
 }
 
