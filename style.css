@@ -67,6 +67,11 @@ p {
     padding: 20px;
 }
 
+.main-page-project-container:hover {
+    background-color: yellow;
+}
+    
+
 .project-page-body-container {
     display: grid;
     grid-template-columns: 50% 50%;
