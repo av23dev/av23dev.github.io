@@ -229,7 +229,7 @@ a h2:hover {
     //None
 }
     
-.hover-background:hover{
+.hover-background a:hover{
      background: #3374C2
 }
 
