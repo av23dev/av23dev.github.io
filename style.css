@@ -161,6 +161,10 @@ a:hover {
   font-weight: inherit;
 }
 
+.plain-link:hover {
+  background-color: yellow;
+}
+
 /*a h2 {
     font-size: 2em;
     margin: 0;
