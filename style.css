@@ -58,9 +58,11 @@ p {
 .main-page-project-container {
     /*background-color: #feffe9;*/
 
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 25px;*/
+
+    
     
     max-width: 1000px;
     margin: 0 auto;
@@ -134,7 +136,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 3px;
+    margin-top: 0px;
     font-size: 2em;
     margin-bottom: 0px;
     color: #000000;
