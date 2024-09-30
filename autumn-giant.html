@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="em">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Incoming Threat - av23dev</title>
+    <link rel="shortcut icon" type="image/png" href="Graphics/Little%20Guy.png">
+</head>
+<body>
+    
+    <div>
+        <div class="outer-container">
+            <div class="container">
+                <a href="index.html" class="plain-link" style="word-break: keep-all; white-space: nowrap;"><h1>Game Portfolio of av23dev</h1></a>
+                <div class="main-link-container">
+                    <a href="./about.html" class="plain-link"><h4>About</h4></a>
+                    <a href="index.html" class="plain-link"><h4>Game Projects</h4></a>
+                    <a href="./3d-models.html" class="plain-link"><h4>3D Models</h4></a>
+                    <a href="./contact.html" class="plain-link"><h4>Contact</h4></a>
+                </div>
+            </div>
+        </div>
+        <div class="title-line"></div>
+    </div>
+    
+    <div class="outer-containerBody">
+        <div class="containerBody">
+            <h2 class="center-text highlight-blue" style="margin-top: 10px;">Incoming Threat</h2>
+            <div class="project-page-body-container">
+                <div class="vert-flexbox">
+                    <h2 style="text-decoration: underline;">About</h2>
+                    <p>Incoming Threat was made by me in Unity/C# as a side project. Fight a number of unique enemies in this pseudo boss rush.</p>
+                    <p>It taught me the basics of FPS mechanics and how to design enemies and player abilities alike. I also learned the basics of multiplayer and game networking.</p>
+                    <p>I designed and developed this entire project.</p>
+
+                    <h2 style="text-decoration: underline;">Important Points</h2>
+                    <ul>
+                        <li style="margin-bottom: 5px;">The goal of the game is to survive as long as possible</li>
+                        <li style="margin-bottom: 5px;">This game is like a mini boss rush with enemies that have different abilities</li>
+                        <li style="margin-bottom: 5px;">Players can get new abilities throughout the game which allows for more gameplay variety</li>
+                        <li style="margin-bottom: 5px;">An earlier version of the game had basic, functioning multiplayer</li>
+                    </ul>
+
+                    <div class="line" style="margin-top:40px; margin-bottom:25px;"></div>
+
+                    <h2 style="text-decoration: underline;">Details</h2>
+                    <h3>Enemy Design</h3>
+                    <p>Enemies are designed with unique abilities and movement. Currently there are 8 enemies in the game:</p>
+                    <ol>
+                        <li style="margin-bottom: 5px;">A hovering cube with a ranged slice and area of effect melee</li>
+                        <li style="margin-bottom: 5px;">A cannon that fires cannonballs and lunges</li>
+                        <li style="margin-bottom: 5px;">A 2D enemy on the screen. Player needs to fight it in a 2D platformer</li>
+                        <li style="margin-bottom: 5px;">A large floating fortress that fires arrows and drags a spiked ball</li>
+                        <li style="margin-bottom: 5px;">A humanoid with a rifle</li>
+                        <li style="margin-bottom: 5px;">A floating sphere that fires projectiles and deploys a field that manipulates movement</li>
+                        <li style="margin-bottom: 5px;">A fast humanoid with pike. Closing the distance will force them to switch to a knife</li>
+                        <li style="margin-bottom: 5px;">A floating, hidden, low poly sphere that darkens the area around the player. Only reveals itself when preparing to attack, player must counterattack in time to stun and damage it</li>
+                        
+                    </ol>
+
+                    <h3>Player Abilites</h3>
+                    <p>Players have access to a number of abilities and gain more through upgrade stations found throughout the area:</p>
+                    <ol>
+                        <li style="margin-bottom: 5px;">A rocket launcher launcher on a cooldown. (With rocket jumping of course)</li>
+                        <li style="margin-bottom: 5px;">An ability which makes the player invulnerable for a small time</li>
+                        <li style="margin-bottom: 5px;">A throwable jar that applies a status effect</li>
+                        <li style="margin-bottom: 5px;">A short range teleport</li>
+                    </ol>
+                    
+                    <h3>Status Effects</h3>
+                    <p>I created a status effect system in the game. Enemies can be inflicted with these effects. There are 4 base elements and can combine with one another to create a total of 6 combined elements.</p>
+
+                    <h3>Player Weapons</h3>
+                    <p>This was one of my first projects that has multiple, switchable weapons. This allowed me to learn how to construct a flexible weapon system. It involves a central universal weapon script that changes depending on what weapon is active. This is the basics that helped me develop the other project I have: Weapons in a Cube.</p>
+
+                    <h3>Biggest Challenges</h3>
+                    <p>A problem that was really confusing for me was that when I played the game hitboxes would seemingly randomly start to become inconsistent. After extensive troubleshooting I found out that projectiles flying off into empty space caused this. In Unity, if an object flies too far from the world origin then it causes colliders to break. This problem was especially hard since the cause and effect are not very closely related.</p>
+                    <p>Getting a working weapon/ability system was a little hard, but the centralized approach that I took allowed it to be very flexible. The abilities are bound to 1-4 on the keyboard, with the centralized system it allows for the abilities to be placed in any of those keys in any order.</p>
+                    <p>Working with multiplayer was complex and took a while to understand the basics of. While not in the current build, it was working in an earlier version and I learned a lot of networking from it. I’ve worked with the system of server communication, RPCs, network objects, and more.</p>
+                    
+                </div>
+
+                <div class="vert-flexbox">
+                    <div style="height: 40px;"></div>
+                    <div style="text-align: right;">
+                        
+                        <iframe width="450" height="253.125" src="https://www.youtube-nocookie.com/embed/UwBJ_RSdgCQ?si=HANFx4p1Ao_EdRYR&amp;modestbranding=1&amp;showinfo=0&amp;rel=0"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                    <img src="Graphics/Images/IMGIncomingThreat%20(1).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(2).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(3).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(4).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(5).png" class="center-image">
+                    <img src="Graphics/Images/IMGIncomingThreat%20(6).png" class="center-image">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<footer>
+    
+</footer>
+</html>
