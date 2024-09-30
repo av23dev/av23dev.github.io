@@ -56,11 +56,9 @@
                     <p>This game is heavily reliant on scripts communicating with each other. Objects such as trees that fall into collection bins need to be checked correctly and the score must be recorded correctly in a manager.</p>
                     <p>One of more challenging scripts was the water collection. You need to hold a cloud over a bucket to fill it with water. The bucket detects if a cloud is above it, but it also needs to get the script to check if it is being held.</p>
                     
-                    <h3>Status Effects</h3>
-                    <p>I created a status effect system in the game. Enemies can be inflicted with these effects. There are 4 base elements and can combine with one another to create a total of 6 combined elements.</p>
-
-                    <h3>Player Weapons</h3>
-                    <p>This was one of my first projects that has multiple, switchable weapons. This allowed me to learn how to construct a flexible weapon system. It involves a central universal weapon script that changes depending on what weapon is active. This is the basics that helped me develop the other project I have: Weapons in a Cube.</p>
+                    <h3>Gameplay Details</h3>
+                    <p>Players need to collect resources for a village to prepare it for the coming winter. They need to gather wood, food, and water. If the player does not collect enough resources the village will fail to survive.</p>
+                    <p>Trees are scattered throughout the map randomly and the player needs to pick them up and put them in a pile to collect wood. Roaming pigs walk around the map and the player needs to pick them up and put them in a pen to collect food. Clouds float by and players need to grab them and hover the cloud over a bucket to collect water.</p>
 
                     <h3>Biggest Challenges</h3>
                     <p>A problem that was really confusing for me was that when I played the game hitboxes would seemingly randomly start to become inconsistent. After extensive troubleshooting I found out that projectiles flying off into empty space caused this. In Unity, if an object flies too far from the world origin then it causes colliders to break. This problem was especially hard since the cause and effect are not very closely related.</p>
